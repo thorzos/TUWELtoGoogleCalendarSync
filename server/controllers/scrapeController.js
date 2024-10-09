@@ -98,6 +98,8 @@ async function setupPage(page) {
             console.log("No more data button");
         }
 
+        await page.waitForNetworkIdle({ timeout: 3000 });
+
         return true;
 
     } catch (error) {
