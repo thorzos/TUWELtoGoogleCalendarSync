@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
 })
 
 import { scrapeTUWEL } from "./controllers/scrapeController.js";
-app.get("/scrape", scrapeTUWEL);
+app.get("/getTUWELData", scrapeTUWEL)
   
 app.listen(port, () => {
     console.log("Example app listening on port: " + port)
